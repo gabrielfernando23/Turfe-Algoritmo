@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,42 @@
     <title>Turfe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="input1">
+
+        <div class="container-inicio"></div>
+        
+
+        <div class="pergunta" id="primeiraPagina">
+
+            <div class="pipt">
+            Quais os nomes dos cavalos? <input class="ipt_style" id="ipt_nomeCavalo" type="text">
+            </div>
+
+            <div class="box_button">
+            <button class="button_perg" onclick="cadastrarCavalo()">Adicionar</button>
+            <button class="button_perg" onclick="segundaPagina()">Corrida</button>
+            </div>
+
+            <div id="cavalos_adicionados"></div>
+        </div>
+
+        <div id="paginaCorrida" style="display:none;">
+            <div id="cavalos_concorrentes">
+            </div>
+            <button onclick="Corrida" class="button_perg">Dar a Largada</button>
+            <div id="largada">
+                
+
+            </div>
+        </div>
+
+
+    </div
+
+
 </body>
+
 </html>
 <script src="script.js"></script>

@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+  }
+
+body{
+    /* background-image: url(https://img.freepik.com/vetores-gratis/mundo-de-jogo-de-arcade-e-cena-de-pixel_24640-45908.jpg?t=st=1669816114~exp=1669816714~hmac=b37051fba81295a65acaf86830b19fe526c3f4090591a904931b4bd16e373345); */
+    background-color: brown;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button:active{
+background-color: rgb(151, 11, 11);
+}
+
+.pergunta{
+    border-radius: 20px;
+    height: 300px;
+    width: 700px;
+    border: 5px rgba(58, 4, 4, 0.575) solid;
+    background-color: rgba(100, 16, 16, 0.363);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  margin-top: 170px;
+
+}
+
+.ipt_style{
+    background-color: rgba(39, 4, 4, 0.521);
+    border-radius: 6px;
+    height: 40px;
+    width: 180px;
+    border: rgba(44, 8, 8, 0.678) 5px solid;
+    padding: 10px;
+}
+.tittle {
+    font-size: 30px;
+}
+.box_button{
+    width: 30%;
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+button {
+    margin: 4px;
+
+
+}
+input{
+    color: white
+
+}
+.button_perg{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+}
+.pipt{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 10px;
+}
