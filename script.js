@@ -5,10 +5,7 @@ function cadastrarCavalo() {
     if (cavalos_cadastrados.length < 3) {
         cavalos_cadastrados.push(ipt_nomeCavalo.value)
         ipt_nomeCavalo.value = '';
-        cavalos_adicionados.innerHTML = ``
-        for (var index = 0; index < cavalos_cadastrados.length; index++) {
-            cavalos_adicionados.innerHTML += `<br>${cavalos_cadastrados[index]}`
-        }
+        alert('Cavalo cadastrado com sucesso!')
     }else{
         alert('Você já cadastro o número máximo de cavalos!')
    }
@@ -62,5 +59,4 @@ function Corrida() {
 function segundaPagina() {
     primeiraPagina.style.display = "none"
     paginaCorrida.style.display = "block"
-    cavalos_concorrentes.innerHTML = `<h2>Cavalos concorrendo</h2><span>${cavalos_cadastrados[0]}<br>${cavalos_cadastrados[1]}<br>${cavalos_cadastrados[2]}`
 }
