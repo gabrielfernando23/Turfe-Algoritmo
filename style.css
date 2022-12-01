@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     border: 0;
@@ -8,7 +8,7 @@
   }
 
 body{
-    /* background-image: url(https://img.freepik.com/vetores-gratis/mundo-de-jogo-de-arcade-e-cena-de-pixel_24640-45908.jpg?t=st=1669816114~exp=1669816714~hmac=b37051fba81295a65acaf86830b19fe526c3f4090591a904931b4bd16e373345); */
+    background-image: url(https://img.freepik.com/vetores-gratis/mundo-de-jogo-de-arcade-e-cena-de-pixel_24640-45908.jpg?t=st=1669816114~exp=1669816714~hmac=b37051fba81295a65acaf86830b19fe526c3f4090591a904931b4bd16e373345);
     background-color: brown;
     background-size: cover;
     display: flex;
@@ -76,3 +76,88 @@ input{
     font-size: 20px;
     font-weight: 10px;
 }
+ */
+
+
+
+/* Paulo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+    background-image: url("https://i.imgur.com/zNo7KTI.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.divCorrida {
+    border: 3px solid black;
+    height: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.divCorrida button {
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: yellow;
+    transition: .7s;
+    cursor: pointer;
+}
+.divCorrida button:hover {
+    background-color: black;
+    color: white;
+}
+.cavalo {
+    width: 100%;
+}
+
+.cavalo .uno {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    animation: andando 10s linear infinite;
+}
+
+.result{
+    display: none;
+    border: 3px solid black;
+    height: 40%;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+@keyframes andando{
+    from{
+    right: 1400px;
+    }
+
+    to{
+        right: -180px;
+    }
+}
+
+

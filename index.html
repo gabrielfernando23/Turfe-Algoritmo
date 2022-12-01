@@ -10,20 +10,45 @@
 </head>
 
 <body>
-    <div class="input1">
+    
+    <div class="divCorrida" style="display: none;">
+        <h1>Turfe Amigo</h1>
+    
+        <h2>Corrida(Voltas)</h2>
+        <span id="s1_msg"></span>
+    
+        <button onclick="corrida()">Dar Largada 🏁</button>
+    
+    </div>
+    
+        <div class="result">
+            <h1>Resultado da corrida</h1>
+    
+            <img src="podium-removebg-preview.png" alt="">
+        </div>
+    
+        
+    </div>
+    <div class="cavalo">
+    <img class="uno" src="cavalo-pulante-1--unscreen.gif" alt="">
+    </div>
+
+
+    <div class="divCorrida" >
 
         <div class="container-inicio"></div>
-        
+
 
         <div class="pergunta" id="primeiraPagina">
 
             <div class="pipt">
-            Quais os nomes dos cavalos? <input class="ipt_style" id="ipt_nomeCavalo" type="text">
+                Quais os nomes dos cavalos? <input class="ipt_style" id="ipt_nomeCavalo" type="text">
             </div>
 
             <div class="box_button">
-            <button class="button_perg" onclick="cadastrarCavalo()">Adicionar</button>
-            <button class="button_perg" onclick="segundaPagina()">Corrida</button>
+                <button clas
+                s="button_perg" onclick="cadastrarCavalo()">Adicionar</button>
+                <button class="button_perg" onclick="segundaPagina()">Corrida</button>
             </div>
 
             <div id="cavalos_adicionados"></div>
@@ -34,14 +59,13 @@
             </div>
             <button onclick="Corrida" class="button_perg">Dar a Largada</button>
             <div id="largada">
-                
+
 
             </div>
         </div>
 
 
-    </div
-
+    </div>
 
 </body>
 
