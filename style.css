@@ -101,10 +101,9 @@ body {
 
 .divCorrida {
     border: 3px solid black;
-    height: 30%;
+    height: 40%;
     width: 30%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
@@ -126,6 +125,20 @@ body {
     background-color: black;
     color: white;
 }
+
+.divCorrida input{
+    background-color: rgba(39, 4, 4, 0.521);
+    border-radius: 6px;
+    height: 30px;
+    width: 180px;
+    border: rgba(44, 8, 8, 0.678) 3px solid;
+    padding: 10px;
+}
+
+.divCorrida .box_button{
+    margin-top: 30px;
+}
+
 .cavalo {
     width: 100%;
 }
@@ -137,17 +150,24 @@ body {
     animation: andando 10s linear infinite;
 }
 
-.result{
+.paginaCorrida #largada{
     display: none;
     border: 3px solid black;
-    height: 40%;
-    width: 50%;
+    height: 400px;
+    width: 600px;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     color: black;
+    
+}
+
+.box-corrida{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 @keyframes andando{
